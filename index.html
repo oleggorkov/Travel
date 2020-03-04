@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Travel</title>
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link href="style/datepicker.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="content">
+
+        <header class="header">
+            <div class="burger-button">
+                <span class="burger-button-line"></span>
+            </div>
+            <nav class="header-menu">
+                <div class="header-menu-choose">
+                    <div class="header-menu-choose__flex">
+                        <details class="header-menu-choose__country">
+                            <summary>Страны <img src="img/Vector.png" alt="arrow">
+                                <img class="header-menu-choose__img--up" src="img/Vector%20up.png" alt="arrow">
+                            </summary>
+                            <div class="header-menu-choose__block">
+                                <ul class="choose-list">
+                                    <li>
+                                        <details class="choose-list-continent">
+                                        <summary>Южная Америка</summary>
+                                            <ul class="choose-list-continent-list">
+                                                <li><a href="#" class="choose-list-continent-list__link">Аргентина</a></li>
+                                                <li><a href="#" class="choose-list-continent-list__link">Бразилия</a></li>
+                                                <li><a href="#" class="choose-list-continent-list__link">Перу</a></li>
+                                                <li><a href="#" class="choose-list-continent-list__link">Уругвай</a></li>
+                                                <li><a href="#" class="choose-list-continent-list__link">Чили</a></li>
+                                                <li><a href="#" class="choose-list-continent-list__link">Эквадор</a></li>
+                                                <li><a href="#" class="choose-list-continent-list__link--yellow">Все туры на континенте</a></li>
+                                            </ul>
+                                    </details>
+                                    </li>
+                                </ul>
+                                <ul class="choose-list">
+                                    <li>
+                                        <details class="choose-list-continent">
+                                            <summary>Северная Америка</summary>
+                                            <ul class="choose-list-continent-list">
+                                                <li><a href="#" class="choose-list-continent-list__link">Антигуа и Барбуда</a></li>
+                                                <li><a href="#" class="choose-list-continent-list__link">Багамы</a></li>
+                                                <li><a href="#" class="choose-list-continent-list__link">Барбадос</a></li>
+                                                <li><a href="#" class="choose-list-continent-list__link">Гаити</a></li>
+                                                <li><a href="#" class="choose-list-continent-list__link">Гренада</a></li>
+                                                <li><a href="#" class="choose-list-continent-list__link">Доминика</a></li>
+                                                <li><a href="#" class="choose-list-continent-list__link--yellow">Все туры на континенте</a></li>
+                                            </ul>
+                                        </details>
+                                    </li>
+                                </ul>
+                                <ul class="choose-list">
+                                    <li>
+                                        <details class="choose-list-continent">
+                                            <summary>Арктика и Антарктика</summary>
+                                            <ul class="choose-list-continent-list">
+                                                <li><a href="#" class="choose-list-continent-list__link">Арктика</a></li>
+                                                <li><a href="#" class="choose-list-continent-list__link">Антарктика</a></li>
+                                                <li><a href="#" class="choose-list-continent-list__link--yellow">Все туры на континенте</a></li>
+                                            </ul>
+                                        </details>
+                                    </li>
+                                </ul>
+                                <ul class="choose-list">
+                                    <li>
+                                        <details class="choose-list-continent">
+                                            <summary>Африка</summary>
+                                            <ul class="choose-list-continent-list">
+                                                <li><a href="#" class="choose-list-continent-list__link">Алжир</a></li>
+                                                <li><a href="#" class="choose-list-continent-list__link">Ботсвана</a></li>
+                                                <li><a href="#" class="choose-list-continent-list__link">Гамбия</a></li>
+                                                <li><a href="#" class="choose-list-continent-list__link">Египет</a></li>
+                                                <li><a href="#" class="choose-list-continent-list__link">Замбия</a></li>
+                                                <li><a href="#" class="choose-list-continent-list__link">Зимбабве</a></li>
+                                                <li><a href="#" class="choose-list-continent-list__link--yellow">Все туры на континенте</a></li>
+                                            </ul>
+                                        </details>
+                                    </li>
+                                </ul>
+                                <ul class="choose-list">
+                                    <li>
+                                        <details class="choose-list-continent">
+                                            <summary>Австралия и Океания</summary>
+                                            <ul class="choose-list-continent-list">
+                                                <li><a href="#" class="choose-list-continent-list__link">Австралия</a></li>
+                                                <li><a href="#" class="choose-list-continent-list__link">Океания</a></li>
+                                                <li><a href="#" class="choose-list-continent-list__link--yellow">Все туры на континенте</a></li>
+                                            </ul>
+                                        </details>
+                                    </li>
+                                </ul>
+                                <ul class="choose-list">
+                                    <li>
+                                        <details class="choose-list-continent">
+                                            <summary>Европа</summary>
+                                            <ul class="choose-list-continent-list">
+                                                <li><a href="#" class="choose-list-continent-list__link">Австрия</a></li>
+                                                <li><a href="#" class="choose-list-continent-list__link">Бельгия</a></li>
+                                                <li><a href="#" class="choose-list-continent-list__link">Болгария</a></li>
+                                                <li><a href="#" class="choose-list-continent-list__link">Великобритания</a></li>
+                                                <li><a href="#" class="choose-list-continent-list__link">Венгрия</a></li>
+                                                <li><a href="#" class="choose-list-continent-list__link">Германия</a></li>
+                                                <li><a href="#" class="choose-list-continent-list__link--yellow">Все туры на континенте</a></li>
+                                            </ul>
+                                        </details>
+                                    </li>
+                                </ul>
+                                <ul class="choose-list">
+                                    <li>
+                                        <details class="choose-list-continent">
+                                            <summary>Россия</summary>
+                                            <ul class="choose-list-continent-list">
+                                                <li><a href="#" class="choose-list-continent-list__link">Москва</a></li>
+                                                <li><a href="#" class="choose-list-continent-list__link">Санкт-Петербург</a></li>
+                                                <li><a href="#" class="choose-list-continent-list__link--yellow">Все туры на континенте</a></li>
+                                            </ul>
+                                        </details>
+                                    </li>
+                                </ul>
+                                <ul class="choose-list">
+                                    <li>
+                                        <details class="choose-list-continent">
+                                            <summary>Азия</summary>
+                                            <ul class="choose-list-continent-list">
+                                                <li><a href="#" class="choose-list-continent-list__link">Азербайджан</a></li>
+                                                <li><a href="#" class="choose-list-continent-list__link">Армения</a></li>
+                                                <li><a href="#" class="choose-list-continent-list__link">Бахрейн</a></li>
+                                                <li><a href="#" class="choose-list-continent-list__link">Грузия</a></li>
+                                                <li><a href="#" class="choose-list-continent-list__link">Израиль</a></li>
+                                                <li><a href="#" class="choose-list-continent-list__link">Иордания</a></li>
+                                                <li><a href="#" class="choose-list-continent-list__link--yellow">Все туры на континенте</a></li>
+                                            </ul>
+                                        </details>
+                                    </li>
+                                </ul>
+                            </div>
+                        </details>
+                        <details class="header-menu-choose__date">
+                            <summary>Даты <img src="img/Vector.png" alt="arrow"><img class="header-menu-choose__img--up" src="img/Vector%20up.png" alt="arrow"></summary>
+                            <div class="header-menu-choose__block">
+                                <div data-range="true" data-multiple-dates-separator=" - " class="datepicker-here"></div>
+                                <div class="header-menu-choose__block__text">Выберите дату не позднее которой хотите вернуться</div>
+                            </div>
+                        </details>
+                    </div>
+                    <details class="header-menu-choose__type">
+                        <summary>Тип путешествия <img src="img/Vector.png" alt="arrow"><img class="header-menu-choose__img--up" src="img/Vector%20up.png" alt="arrow"></summary>
+                        <div class="header-menu-choose__block">
+                        <ul class="choose-list-continent-list">
+                            <li><a href="#" class="choose-list-continent-list-link">Активный</a></li>
+                            <li><a href="#" class="choose-list-continent-list-link">Майские</a></li>
+                            <li><a href="#" class="choose-list-continent-list-link">На авто</a></li>
+                            <li><a href="#" class="choose-list-continent-list-link">На корабле</a></li>
+                            <li><a href="#" class="choose-list-continent-list-link">Новый год</a></li>
+                            <li><a href="#" class="choose-list-continent-list-link">Поход</a></li>
+                            <li><a href="#" class="choose-list-continent-list-link">Серфинг</a></li>
+                            <li><a href="#" class="choose-list-continent-list-link">Эксклюзив</a></li>
+                            <li><a href="#" class="choose-list-continent-list-link">Экскурсионный</a></li>
+                            <li><a href="#" class="choose-list-continent-list-link">Экспедиция</a></li>
+                        </ul>
+                        </div>
+                    </details>
+                    <a href="#" class="header-menu-choose__search">Найти</a>
+                </div>
+                <ul class="header-menu-list">
+                    <li><a class="burger-menu-list__link" href="#">Путешествия</a></li>
+                    <li><a class="burger-menu-list__link" href="#">О нас</a></li>
+                    <li><a class="burger-menu-list__link" href="#">Отзывы</a></li>
+                    <li><a class="burger-menu-list__link" href="#">Блог</a></li>
+                </ul>
+                <div class="header-menu-phone">+7 (495) 123-45-67</div>
+                <a href="#" class="header-menu-button">Подберите мне тур</a>
+            </nav>
+        </header>
+
+        <div class="main container">
+            <div class="outer-wrapper">
+                <h1 class="main-heading">зимбабве</h1>
+                <div class="main-block">
+                    <div class="main-block-item">
+                        <div class="main-block-item__img">
+                            <img src="img/687_anons-min_480_275_5_90.png" alt="italy">
+                            <div class="main-block-item__price">от 118 122 Р</div>
+                        </div>
+                        <div class="main-block-item__country">Италия</div>
+                        <div class="main-block-item__heading">Под небом Тосканы</div>
+                        <div class="main-block-item__cities">Сансеполькро — (Перуджа) — Ассизи — Губбио — (Сиена)
+                            — Ла Верна — Ангиари — Монтерки — Ареццо — Кортона — (Пиенца) - (Монтепульчано)</div>
+                        <div class="main-block-item__days">8 дней / 7 ночей <span>Русский язык</span></div>
+                        <div class="main-block-item__date">27.04.19 - 04.05.19 <span>и еще 15 дат</span></div>
+                        <div class="main-block-item__air">Авиаперелет включен!</div>
+                    </div>
+                    <div class="main-block-item">
+                        <div class="main-block-item__img">
+                            <img src="img/430_anons_480_275_5_90.png" alt="Iceland">
+                            <div class="main-block-item__price">140 715 Р</div>
+                        </div>
+                        <div class="main-block-item__country">Исландия</div>
+                        <div class="main-block-item__heading">Под небом Тосканы</div>
+                        <div class="main-block-item__cities">Рейкьявик — Тингвеллир — Гюдльфосс — Скафтафедль
+                            — Сельяландсфосс — Скоугафосс — Йёкюльсаурлоун — Голубая Лагуна — Снайфельсйёкутль
+                            — Arnarstapi — Рейкьявик</div>
+                        <div class="main-block-item__days">8 дней / 7 ночей <span>Русский язык</span></div>
+                    </div>
+                    <div class="main-block-item">
+                        <div class="main-block-item__img">
+                            <img src="img/640anons_480_275_5_90.png" alt="Turkey">
+                            <div class="main-block-item__price">37 302 Р</div>
+                        </div>
+                        <div class="main-block-item__country">Турция</div>
+                        <div class="main-block-item__heading">Открытие Турции</div>
+                        <div class="main-block-item__cities">Стамбул — Анкара — Каппадокия — Конья — Памуккале
+                            — Эфес — Кушадасы — Пергам — Ассос — Троя — Стамбул</div>
+                        <div class="main-block-item__days">8 дней / 7 ночей <span>Русский язык</span></div>
+                        <div class="main-block-item__date">28.04.19 - 05.05.19 <span>и еще 3 даты</span></div>
+                    </div>
+                    <div class="main-block-item">
+                        <div class="main-block-item__img">
+                            <img src="img/117_anons-min_480_275_5_90.png" alt="Norway">
+                            <div class="main-block-item__price">145 000 Р</div>
+                        </div>
+                        <div class="main-block-item__country">Норвегия, Шпицберген</div>
+                        <div class="main-block-item__heading">От Свальбарда до Груманта</div>
+                        <div class="main-block-item__days">8 дней / 7 ночей <span>Русский язык</span></div>
+                        <div class="main-block-item__date">27.04.19 - 04.05.19 <span>и еще 15 дат</span></div>
+                        <div class="main-block-item__guarantee">АГарантированный тур!</div>
+                    </div>
+                </div>
+                <div class="main-bid">
+                    <h2 class="main-bid-heading">Заявка на подбор путешествия</h2>
+                    <div class="main-bid-form">
+                        <div class="main-form-block">
+                        <div class="main-bid-form__heading">Немного о вас</div>
+                        <div class="main-form-block-item">
+                            <div class="main-form-block-flex">
+                            <label class="main-form-block-flex__label" for="name">Имя <span>*</span></label>
+                            <div class="main-form-block-flex__input">
+                                <input type="text" id="name" required>
+                            </div>
+                                <div class="main-form-block-flex__error">Укажите континент, страну или город</div>
+                            </div>
+                            <div class="main-form-block-flex">
+                                <label class="main-form-block-flex__label" for="phone">Телефон</label>
+                                <div class="main-form-block-flex__input">
+                                    <input type="text" id="phone" placeholder="+7___ ___ __ __">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="main-form-block">
+                            <div class="main-bid-form__heading--tur">О путешествии</div>
+                            <div class="main-form-block-item">
+                                <div class="main-form-block-flex">
+                                    <label class="main-form-block-flex__label" for="city">
+                                        Куда и когда хотите поехать?<span>*</span></label>
+                                    <div class="main-form-block-flex__input">
+                                        <input type="text" id="city" required placeholder="Континент, страна или город">
+                                    </div>
+                                </div>
+                                <div class="main-form-block-flex">
+                                    <label class="main-form-block-flex__label" for="date">Когда?</label>
+                                    <div class="main-form-block-flex__input">
+                                        <input type="text" id="date" placeholder="Даты или временной  интервал">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-bid-form__down">
+                        <div class="main-bid-form-block">
+                            <div class="main-bid-form__heading--rel">Удобный способ связи</div>
+                            <div class="main-form-flex">
+                                <div class="main-form-flex-item main-form-flex-item__up">
+                                    <div class="main-form-checkbox__text">Viber</div>
+                                    <div class="main-form-checkbox__text">Whatsapp</div>
+                                    <div class="main-form-checkbox__text">Почта</div>
+                                    <div class="main-form-checkbox__text">Телефон</div>
+                                </div>
+                                <div class="main-form-flex-item">
+                                <div class="main-form-checkbox">
+                                    <input type="checkbox" id="viber" class="main-form-checkbox__input">
+                                    <label class="main-form-checkbox__label main-form-checkbox__label--viber" for="viber"></label>
+                                </div>
+                            <div class="main-form-checkbox">
+                                <input type="checkbox" id="whatsapp" class="main-form-checkbox__input">
+                                <label class="main-form-checkbox__label main-form-checkbox__label--whatsapp" for="whatsapp"></label>
+                            </div>
+                            <div class="main-form-checkbox">
+                                <input type="checkbox" id="mail" class="main-form-checkbox__input">
+                                <label class="main-form-checkbox__label main-form-checkbox__label--mail" for="mail"></label>
+                        </div>
+                            <div class="main-form-checkbox">
+                                <input type="checkbox" id="mobile" class="main-form-checkbox__input">
+                                <label class="main-form-checkbox__label main-form-checkbox__label--mobile" for="mobile"></label>
+                                </div>
+                    </div>
+                            </div>
+                        </div>
+                        <div class="main-bid-form-block">
+                            <div class="main-bid-form__heading--where">Откуда узнали о нас</div>
+                            <div class="main-form-flex">
+                                <div class="main-form-flex-item">
+                                    <div class="main-form-checkbox__text">Интернет</div>
+                                    <div class="main-form-checkbox__text">Рекомендовали<br> друзья</div>
+                                    <div class="main-form-checkbox__text">Соц. сети</div>
+                                    <div class="main-form-checkbox__text">Уже ездил</div>
+                                </div>
+                                    <div class="main-form-flex-item">
+                                    <div class="main-form-checkbox">
+                                        <input type="checkbox" id="internet" class="main-form-checkbox__input">
+                                        <label class="main-form-checkbox__label main-form-checkbox__label--internet" for="internet"></label>
+                                </div>
+                                    <div class="main-form-checkbox">
+                                        <input type="checkbox" id="friends" class="main-form-checkbox__input">
+                                        <label class="main-form-checkbox__label main-form-checkbox__label--friends" for="friends"></label>
+                                </div>
+                                    <div class="main-form-checkbox">
+                                        <input type="checkbox" id="social" class="main-form-checkbox__input">
+                                        <label class="main-form-checkbox__label main-form-checkbox__label--social" for="social"></label>
+                                    </div>
+                                    <div class="main-form-checkbox">
+                                        <input type="checkbox" id="goes" class="main-form-checkbox__input">
+                                        <label class="main-form-checkbox__label main-form-checkbox__label--goes" for="goes"></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    <div class="main-bid-offer">
+                        <div class="main-bid-offer-checkbox">
+                            <input type="checkbox" id="offer" class="main-bid-offer__input">
+                            <label class="main-bid-offer__label" for="offer">Получать свежие предложения
+                                по электронной почте</label>
+                    </div>
+                        <div class="main-bid-offer-text">Каждую неделю мы делаем для вас обзор лучших экспедиций,
+                            статей и лайфхаков для путешественников. Если вдруг вам не понравится,
+                            вы сможете отписаться в любой момент.</div>
+        </div>
+                    <div class="main-bid-personal">
+                        <div class="main-bid-personal-checkbox">
+                            <input type="checkbox" id="personal" class="main-bid-personal__input">
+                            <label class="main-bid-personal__label" for="personal">С обработкой своих персональных данных согласен.
+                                <span>*</span></label>
+                        </div>
+                        <div class="main-bid-personal-text">Отправляя заявку я подтверждаю согласие
+                            с условиями Пользовательского соглашения</div>
+                    </div>
+                    <div class="main-bid-small-text"><span>*</span> Поля, которые надо обязательно заполнить</div>
+                    <a href="#name" class="main-bid-button">Отправить <span>></span></a>
+    </div>
+            </div>
+            <script src="script/jquery-3.3.1.min.js"></script>
+            <script src="script/burger.js"></script>
+            <script src="script/datepicker.js"></script>
+            <script src="script/Validator.js"></script>
+</body>
+</html>
